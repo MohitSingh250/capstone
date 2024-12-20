@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #0a0a0a;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+   .hero {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    padding: 50px 20px;
+  }
+  
+  .hero-bg {
+    height: 400px; 
+    background-image: url(img/image\ div.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+  }
+  
+  .hero-description {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    text-align: left;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .intro {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #sections {
+    width: 100vw;
+  }
+  .sections {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section01{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+  
+  /* .section {
+    flex: 1;
+    margin-bottom: 50px;
+  }
+  
+  .section h2 {
+    margin-bottom: 20px;
+  }
+   */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .item, .metric {
+    width: calc(50% - 10px); 
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  
+  .metric h3 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio {
+    padding: 50px 20px;
+    background-color: #0a0a0a;
+  }
+  
+  .portfolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .portfolio-item img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .stats-content {
+      gap: 30px;
+    }
+  
+    .what-i-do ul,
+    .impact-metrics .metrics-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+  
+  
+  .testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #10141e;
+    color: #ffffff;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .testimonial {
+    background-color: #1c2533;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .testimonial img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+  }
+  
+  .testimonial-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .testimonial-content .designation {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-content p {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    margin: 0;
+  }
+  
+  .testimonial:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left2 {
+    font-family: Hepta Slab;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    margin-left: 30px;
+  }
+  
+  .contact {
+    margin-right: 30px;
+    width: 139px;
+    height: 48px;
+    padding: 12px 24px 12px 24px;
+    border-radius: 8px;
+    border: 0.5px solid white;
+    background-color: transparent;
+    color: white;
+  }
+  
+
+  @media (max-width: 768px) {
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .what-i-do, .impact-metrics {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero p {
+      font-size: 18px;
+    }
+  }
+  
